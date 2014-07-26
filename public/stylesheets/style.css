@@ -1,0 +1,67 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+footer {
+  margin-top: 50px;
+  display: table;
+}
+
+footer p {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+div.col-md-4 {
+  padding-left: 0;
+}
+
+li.list-group-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+p {
+  font-size: 1.3em;
+}
+
+.popover-content {
+  height: 100px;
+  overflow: hidden;
+}
+.popover {
+  width: 200px;
+  height: 150px;
+}
+
+.jumbotron {
+  text-align: center;
+}
+
+.profile {
+  display: flex;
+  justify-content: space-between;
+}
+
+.account {
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  align-content: flex-start;
+  overflow: hidden;
+  font-size: 0.5em;
+  text-align: left;
+  margin: 5px;
+}
+
+.account .label {
+  font-size: 2em;
+}
+
+@media (max-width: 768px)  {
+  .profile {
+    flex-direction: column;
+  }
+}

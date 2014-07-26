@@ -1,0 +1,11 @@
+<form action="{{ submit_action }}" method="post">
+  <fieldset class="form-group">
+    <label for="page-title-field">Page Title</label>
+    <input type="text" name="pageTitle" id="page-title-field" class="form-control" value="{{ title }}" required>
+  </fieldset>
+  <fieldset class="form-group">
+    <label for="page-content-field">Page Content</label>
+    <textarea name="pageContent" id="page-content-field" class="form-control" rows="20" required>{{ content }}</textarea>
+  </fieldset>
+  <input type="submit" class="btn btn-primary" value="{{ submit_label }}">
+</form>

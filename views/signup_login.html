@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block header %}
+  {% include "./partials/_header.html" %}
+{% endblock %}
+
+{% block content %}
+  <div class='col-md-6 col-md-offset-3'>
+  <form role='form' action='{{ submit_action }}' method='post'>
+    <fieldset class='form-group'>
+      <label>Email</label>
+      <input type='email' name='email' class='form-control' placeholder='Your email here...'>
+    </fieldset>
+    <fieldset class='form-group'>
+      <label>Password</label>
+      <input type='{{ password_type }}' name='password' class='form-control' placeholder='Your password here...'>
+    </fieldset>
+    <fieldset>
+      <input type='submit' value='{{ submit_value }}' class='btn btn-primary'>
+    </fieldset>
+  </form>
+  <hr>
+  <div class='footer'>
+    <p>{{ footer_question }}<a href='{{ footer_link }}'>{{ footer_suggestion }}</a></p>
+    <p>Or go <a href='/home'>home</a>.</p>
+  </div>
+</div>
+{% endblock %}

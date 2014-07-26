@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+
+{% block header %}
+  {% include "./partials/_header.html" %}
+{% endblock %}
+
+{% block content %}
+  <div class="jumbotron">
+    <h2>YOUR ACCOUNT</h2>
+    <div class='profile'>
+      {% if profile.local.email %}
+      <div class="account bg-default">
+        <p class='label label-default'>Local Login</p>
+        <p><b>Email:</b> {{ profile.local.email }}</p>
+        <p><b>Password: </b>{{ profile.local.password }}</p>
+      </div>
+      {% endif %}
+      {% if profile.facebook.email %}
+      <div class="account bg-primary">
+        <p class='label label-default'>Facebook</p>
+        <p><b>ID:</b> {{ profile.facebook.id }}</p>
+        <p><b>Token:</b> {{ profile.facebook.token }}</p>
+        <p><b>Email:</b> {{ profile.facebook.email }}</p>
+        <p><b>Name:</b> {{ profile.facebook.name }}</p>
+      </div>
+      {% endif %}
+      {% if profile.twitter.id %}
+      <div class="account bg-info">
+        <p class='label label-default'>Twitter</p>
+        <p><b>ID:</b></p>
+        <p><b>Token:</b></p>
+        <p><b>Display Name:</b></p>
+        <p><b>Username:</b></p>
+      </div>
+      {% endif %}
+      {% if profile.google.email %}
+      <div class="account bg-warning">
+        <p class='label label-default'>Google</p>
+        <p><b>ID:</b></p>
+        <p><b>Token:</b></p>
+        <p><b>Email:</b></p>
+        <p><b>Name:</b></p>
+      </div>
+      {% endif %}
+    </div>
+  </div>
+{% endblock %}

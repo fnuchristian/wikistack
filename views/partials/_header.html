@@ -1,0 +1,9 @@
+<div class="row">
+  <h2 class='col-md-10'>{{ header }}</h2>
+  <h2 class='col-md-2'>
+    {% if show_edit_delete %}
+      {% include "./_edit_delete.html" %}
+    {% endif %}
+  </h2>
+</div>
+<hr>

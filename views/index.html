@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block header %}
+  {% include "./partials/_header.html" %}
+{% endblock %}
+
+{% block content %}
+{% if pages.length > 0 %}
+<div class="col-md-4">
+  <ul class='list-group'>
+    {% for page in pages %}
+    <li class='list-group-item'>
+      <a href="/wiki/{{ page.url_name }}">{{ page.title }}</a>
+      <button type="button" class="btn btn-default bs-docs-popover" data-toggle="popover" data-original-title="{{ page.title }}" data-placement="bottom" data-content="{{ page.content }}">Peek</button>
+    </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+  <p>There are no pages. Why don't you <a href="/add">add one</a>?</p>
+</div>
+{% endif %}
+
+{% if show_logout_warning %}
+<div class="col-md-2 col-md-offset10">
+  <p>Logged out.</p>
+</div>
+{% endif %}
+
+{% endblock %}

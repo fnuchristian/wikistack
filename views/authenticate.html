@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block header %}
+  {% include "./partials/_header.html" %}
+{% endblock %}
+
+{% block content %}
+  <div class="jumbotron">
+    <h2>WIKISTACK AUTHENTICATION</h2>
+    <p>Login or Register with:</p>
+    <p>
+      <a href="/login" class='btn btn-default'>LOCAL LOGIN</a>
+      <a href="/signup" class='btn btn-default'>LOCAL SIGNUP</a>
+      <a href="/login/facebook" class='btn btn-primary'>FACEBOOK</a>
+      <a href="/login" class='btn btn-info'>TWITTER</a>
+      <a href="/login" class='btn btn-warning'>GOOGLE</a>
+    </p>
+  </div>
+{% endblock %}
