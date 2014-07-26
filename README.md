@@ -15,13 +15,13 @@ A small version of wikipedia
 MongoDB (http://www.mongodb.org)
 
 ##JavaScript
-NodeJS (http://nodejs.org)
-ExpressJS (http://expressjs.com)
-Marked (https://www.npmjs.org/package/marked) for filter
-Passport (https://www.npmjs.org/package/passport) for authentication
-Express-session (https://www.npmjs.org/package/express-session) for session
-Bcrypt (https://www.npmjs.org/package/bcrypt) for encryption
-Swig (https://www.npmjs.org/package/swig) for views
+* NodeJS (http://nodejs.org)
+* ExpressJS (http://expressjs.com)
+* Marked (https://www.npmjs.org/package/marked) for filter
+* Passport (https://www.npmjs.org/package/passport) for authentication
+* Express-session (https://www.npmjs.org/package/express-session) for session
+* Bcrypt (https://www.npmjs.org/package/bcrypt) for encryption
+* Swig (https://www.npmjs.org/package/swig) for views
 
 ##CSS3
 * Bootstrap (http://getbootstrap.com)
