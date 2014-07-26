@@ -30,9 +30,9 @@ MongoDB (http://www.mongodb.org)
 ##HTML5
 
 #Known bugs
-* Using page title (not id) to identify document in database and to link to each document, therefore cannot have page title
+* Using page title (not id) to identify document in database and to link to each document, therefore cannot have duplicate page title
 * Can edit and delete without authentication
-# Environment variable don't work
+* Environment variables don't work
 
 #Features to be updated in the future
 * Version history like wikipedia
